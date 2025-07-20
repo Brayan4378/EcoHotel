@@ -16,7 +16,7 @@ public class ReservaDAO {
 private ArrayList<ReservaDTO> reservas = new ArrayList();
 
     public ReservaDAO() {
-        this.reservas = reservas;
+        this.reservas = new ArrayList<>();
     }
     
     // Metodo para registrar una reserva
@@ -61,5 +61,8 @@ private ArrayList<ReservaDTO> reservas = new ArrayList();
         }
         return false;
     }
-    
+
+    public ArrayList<ReservaDTO> getReservas() {
+        return reservas;
+    }
 }

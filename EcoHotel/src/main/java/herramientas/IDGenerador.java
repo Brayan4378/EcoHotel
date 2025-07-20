@@ -7,17 +7,16 @@ package herramientas;
 /**
  *
  * @author BrayanOcampo
- */
-public class IDGenerador {
+ */public class IDGenerador {
     
     // Contadores desde 0
-    private static int contadorHotel = 0;
+    private static int contadorReserva = 0;
     private static int contadorHuesped = 0;
     private static int contadorHabitacion = 0;
 
     // Metodos que permiten que los ID´s no vayan a ser iguales
-    public static String generarIDHotel() {
-        return "Ht" + (++contadorHotel);
+    public static String generarIDReserva() {
+        return "Ht" + (++contadorReserva);
     }
 
     public static String generarIDHuesped() {

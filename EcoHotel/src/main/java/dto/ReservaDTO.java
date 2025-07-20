@@ -15,6 +15,8 @@ public class ReservaDTO {
     private String id;
     private LocalDate fechaEntrada;
     private LocalDate fechaSalida;
+    private HuespedDTO huesped;
+    private HabitacionDTO habitacion;
 
     public ReservaDTO(String id, LocalDate fechaEntrada, LocalDate fechaSalida) {
         setId(id);
@@ -52,4 +54,30 @@ public class ReservaDTO {
         }
         this.fechaSalida = fechaSalida;
     }
+
+    public HuespedDTO getHuesped() {
+        return huesped;
+    }
+
+    public void setHuesped(HuespedDTO huesped) {
+        if(huesped == null){
+            throw new IllegalArgumentException("Este campo debe contener información");
+   
+        }
+        this.huesped = huesped;
+    }
+
+    public HabitacionDTO getHabitacion() {
+        if(habitacion == null){
+            throw new IllegalArgumentException("Este campo debe contener información");
+
+        }
+        return habitacion;
+    }
+
+    public void setHabitacion(HabitacionDTO habitacion) {
+        this.habitacion = habitacion;
+    }
+    
+    
 }

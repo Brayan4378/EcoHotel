@@ -16,6 +16,8 @@ public class Reserva {
     private String id;
     private LocalDate fechaEntrada;
     private LocalDate fechaSalida;
+    private Huesped huesped;
+    private Habitacion habitacion;
 
     // Constructor de Reserva con parametros
     public Reserva(String id, LocalDate fechaEntrada, LocalDate fechaSalida) {
@@ -48,4 +50,21 @@ public class Reserva {
     public void setFechaSalida(LocalDate fechaSalida) {
         this.fechaSalida = fechaSalida;
     } 
+
+    public Huesped getHuesped() {
+        return huesped;
+    }
+
+    public void setHuesped(Huesped huesped) {
+        this.huesped = huesped;
+    }
+
+    public Habitacion getHabitacion() {
+        return habitacion;
+    }
+
+    public void setHabitacion(Habitacion habitacion) {
+        this.habitacion = habitacion;
+    }
+    
 }

@@ -3,6 +3,7 @@
  */
 
 package com.mycompany.ecohotel;
+import vistas.VentanaMenu;
 
 /**
  *
@@ -11,6 +12,7 @@ package com.mycompany.ecohotel;
 public class EcoHotel {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        VentanaMenu menu = new VentanaMenu();
+        menu.setVisible(true);
     }
 }

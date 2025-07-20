@@ -15,7 +15,7 @@ public class HabitacionDAO {
     private ArrayList<HabitacionDTO> habitaciones = new ArrayList();
 
     public HabitacionDAO() {
-        this.habitaciones = habitaciones;
+        this.habitaciones = new ArrayList<>();
     }
     
     // Metodo para registrar una habitacion
